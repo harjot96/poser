@@ -2,23 +2,37 @@
     justify-content: space-between;
     align-items: center;
     padding: 60px 0px 40px;
-}
-
-.header-logo {
+  }
+  
+  .header-logo-wrapper {
+    text-align: center;  /* Center the logo and POSER text */
+  }
+  
+  .header-logo {
     height: 66px;
-}
-
-.header-nav-item {
+    color: blanchedalmond;
+    margin-bottom: 10px; /* Adjust the space between the logo and the text */
+  }
+  
+  .header-logo-text {
+    font-size: 24px;  /* Adjust text size as needed */
+    font-weight: 700;
+    color: #333;  /* Set a color for the text (dark grey in this case) */
+    letter-spacing: 1px;
+    text-transform: uppercase;  /* Make the text uppercase */
+  }
+  
+  .header-nav-item {
     font-size: 18px;
     font-weight: 600;
     margin: 0px 20px 0px 36px;
-}
-
-.mobile-menu-wrapper {
+  }
+  
+  .mobile-menu-wrapper {
     position: relative;
-}
-
-.mobile-menu {
+  }
+  
+  .mobile-menu {
     position: fixed;
     background-color: var(--bg-black);
     display: flex;
@@ -32,23 +46,23 @@
     left: 0px;
     transition: transform 0.3s ease-in-out 0s;
     z-index: 1;
-}
-
-.overlay {
+  }
+  
+  .overlay {
     transform: translateX(0px);
-}
-
-.mobile-menu-button-wrapper {
+  }
+  
+  .mobile-menu-button-wrapper {
     z-index: 2;
-}
-
-.mobile-navbar {
+  }
+  
+  .mobile-navbar {
     margin-top: 95px;
     overflow-y: scroll;
     width: 90%;
-}
-
-.mobile-nav-item {
+  }
+  
+  .mobile-nav-item {
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid transparent;
@@ -56,24 +70,29 @@
     font-size: 14px;
     font-weight: 600;
     background-color: var(--bg-light-gray);
-}
-
-@media all and (max-width: 1279px) {
+  }
+  
+  @media all and (max-width: 1279px) {
     .header-logo {
-        height: 53px;
+      height: 53px;
     }
-    
+  
+    .header-logo-text {
+      font-size: 20px;
+    }
+  
     .header-nav-item {
-        margin: 0px 16px 0px 28px;
+      margin: 0px 16px 0px 28px;
     }
-}
-
-@media all and (max-width: 767px) {
+  }
+  
+  @media all and (max-width: 767px) {
     .header {
-        padding-bottom: 50px;
+      padding-bottom: 50px;
     }
-    
+  
     .header-nav-item {
-        display: none;
+      display: none;
     }
-}
+  }
+  

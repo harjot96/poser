@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
+import logo from '../../Images/IconMain.png';  // Import your logo
 
 const Header = () => {
   const [showMobMenu, setShowMobMenu] = useState(false);
@@ -20,16 +21,17 @@ const Header = () => {
         </div>
       </div>
       <div className="flex max-width header">
-        <img
-          src="/assets/pos-logo.png"
-          className="header-logo"
-          alt="POS Machine Logo"
-        />
+        <div className="header-logo-wrapper">
+          <img
+            src={logo}  // Using the imported logo image
+            className="header-logo"
+            alt="POS Machine Logo"
+          />
+          <div className="header-logo-text">POSER</div> {/* Added POSER text below logo */}
+        </div>
         <div className="only-mobile mobile-menu-button-wrapper">
           <button
-            className={`hamburger hamburger--spin ${
-              showMobMenu ? "is-active" : ""
-            }`}
+            className={`hamburger hamburger--spin ${showMobMenu ? "is-active" : ""}`}
             type="button"
             onClick={toggleMobileMenu}
           >

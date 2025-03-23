@@ -5,17 +5,28 @@
     overflow: hidden;
     background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png);
     background-size: cover;
-    background-position: right top;
+    background-position: center center; /* Adjust to center background */
 }
 
 .showcase-wrapper {
-    min-height: 70%;
+    min-height: 10%;
 }
 
 .showcase-ui {
     position: absolute;
     bottom: 0;
     left: 50%;
+    transform: translateX(-50%); /* Center all images horizontally */
+    width: 100%; /* Make sure images take up the correct width */
+}
+
+.showcase-mockup-1,
+.showcase-mockup-2,
+.showcase-mockup-3,
+.showcase-mockup-4,
+.showcase-mockup-5 {
+    width: 100%; /* Ensure they scale properly */
+    max-width: 400px; /* Cap the max width to prevent too large images */
 }
 
 .showcase-mockup-1 {
@@ -43,21 +54,47 @@
     z-index: 98;
 }
 
+/* Desktop sizes */
 @media all and (max-width: 1279px) {
     .product-showcase {
         height: 620px;
     }
     .showcase-ui {
         width: 300px;
+        transform: translateX(-50%); /* Keep images centered */
     }
 }
 
+/* Mobile sizes */
 @media all and (max-width: 767px) {
     .product-showcase {
         height: 450px;
-        background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/video-bg-mobile.png);
+        background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/video-bg-mobile.png); /* Mobile background */
+        background-position: center center; /* Center the mobile background */
     }
     .showcase-ui {
         width: 170px;
+    }
+    .showcase-mockup-1,
+    .showcase-mockup-2,
+    .showcase-mockup-3,
+    .showcase-mockup-4,
+    .showcase-mockup-5 {
+        width: 80%; /* Adjust image width to fit the smaller screens */
+    }
+    .showcase-mockup-1 {
+        transform: translate(-120%, 30%); /* Adjust transforms for mobile */
+    }
+    .showcase-mockup-2 {
+        transform: translate(-85%, 20%);
+    }
+    .showcase-mockup-3 {
+        transform: translate(-50%, 5%);
+    }
+    .showcase-mockup-4 {
+        transform: translate(10%, 15%);
+    }
+    .showcase-mockup-5 {
+        transform: translate(40%, 25%);
     }
 }

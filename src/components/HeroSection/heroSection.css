@@ -30,8 +30,10 @@
 }
 
 .claim-arrow {
-    height: 11px;
+    height: 31px;
     margin: 7px 0 0 8px;
+    position: absolute;
+    top: 10px;
 }
 
 .claim-anchor {

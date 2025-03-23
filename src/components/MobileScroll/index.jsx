@@ -2,26 +2,32 @@ import React, { useState } from 'react';
 import './mobileScroll.css';
 import ScreenText from './ScreenText';
 
+// Import images from the images folder
+import pos1 from "../Images/A.jpeg";
+import pos2 from "../Images/B.jpeg";
+import pos3 from '../Images/C.jpeg';
+import pos4 from '../Images/G.jpeg';
+
 const scrollData = [
   {
-    heading: "streamline your transactions",
-    description: "Experience seamless payments with our advanced POS system. Track sales, manage inventory, and process transactions effortlessly.",
-    mobile_img: 'https://web-images.credcdn.in/_next/assets/images/home-page/features/pos1.png',
+    heading: "Product Listing Made Easy",
+    description: "Effortlessly list your products and manage their details with our user-friendly POS system.",
+    mobile_img: pos1,  // Using the imported image
   },
   {
-    heading: "secure and fast payments",
-    description: "Ensure safe and rapid transactions with our POS machine. Accept multiple payment methods with ease and efficiency.",
-    mobile_img: 'https://web-images.credcdn.in/_next/assets/images/home-page/features/pos2.png',
+    heading: "Inventory Management & Fast Selling",
+    description: "Track and manage your inventory in real-time, ensuring stock availability and promoting fast-selling items.",
+    mobile_img: pos2,  // Using the imported image
   },
   {
-    heading: "real-time sales tracking",
-    description: "Monitor your business performance with real-time analytics and sales reports, helping you make data-driven decisions.",
-    mobile_img: 'https://web-images.credcdn.in/_next/assets/images/home-page/features/pos3.png',
+    heading: "Add New Items with Ease",
+    description: "Quickly add new items to your inventory with basic product details like name, price, and stock count.",
+    mobile_img: pos3,  // Using the imported image
   },
   {
-    heading: "enhanced customer experience",
-    description: "Deliver a smooth checkout experience for your customers with our intuitive and user-friendly POS interface.",
-    mobile_img: 'https://web-images.credcdn.in/_next/assets/images/home-page/features/pos4.png',
+    heading: "Efficient Payment Transactions",
+    description: "Process transactions effortlessly and securely, offering a seamless experience for your customers.",
+    mobile_img: pos4,  // Using the imported image
   },
 ];
 
